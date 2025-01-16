@@ -19,9 +19,29 @@ function ConnectMe() {
                 <span className="font-semibold"> let's connect!</span>
               </h1>
               <div className="flex justify-center gap-1 mt-3 lg:mt-5 lg:gap-5">
-                <ConnectButtons title="linkedin" />
-                <ConnectButtons title="github" />
-                <ConnectButtons title="gmail" />
+                <ConnectButtons
+                  title="linkedin"
+                  link={"https://www.linkedin.com/in/badusha-pareed-a13227255/"}
+                  moblink={
+                    "https://www.linkedin.com/in/badusha-pareed-a13227255/"
+                  }
+                />
+                <ConnectButtons
+                  title="github"
+                  link={"https://github.com/badu01"}
+                  moblink={
+                    "https://github.com/badu01"
+                  }
+                />
+                <ConnectButtons
+                  title="gmail"
+                  link={
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=badushapareeth777@gmail.com&su=Hello,I would like to connect with you!&body=i viewd your portfolio"
+                  }
+                  moblink={
+                    "mailto:badushapareeth777@gmail.com?subject=Hello&body=I would like to connect with you!"
+                  }
+                />
               </div>
             </div>
           </div>
@@ -46,8 +66,12 @@ function ConnectMe() {
             </div>
           }
           <hr />
-          <div className="flex justify-center">
+          <div className="flex justify-center px-10">
             <p>@badu 2025</p>
+           {
+            //<Link to='hero' duration={5000}>back to top</Link>
+            
+            }
           </div>
         </div>
       </section>

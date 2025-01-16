@@ -2,11 +2,13 @@ import React from "react";
 
 function ConnectButtons(props) {
     const{
-        title
+        title,
+        link,
+        moblink
     }=props
   return (
     <div>
-      <a href="google.com">
+      <a href={window.innerWidth <=1080 ? moblink : link}>
         <div className="flex items-center gap-4 border border-black px-5 rounded-2xl hover:bg-black-main hover:text-green-main group">
           <h1 className="lg:text-xl">{title}</h1>
           <svg

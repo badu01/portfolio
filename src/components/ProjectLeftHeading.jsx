@@ -28,7 +28,7 @@ function ProjectLeftHeading() {
               {TechStack.map((stack, index) => (
                 <div
                   key={stack}
-                  className="hover:bg-green-main px-6 border border-green-main"
+                  className="hover:bg-green-main hover:text-black-main px-6 border border-green-main"
                 >
                   {stack}
                 </div>
@@ -41,7 +41,7 @@ function ProjectLeftHeading() {
               {ToolStack.map((stack, index) => (
                 <div
                   key={stack}
-                  className="hover:bg-green-main px-6 border border-green-main"
+                  className="hover:bg-green-main hover:text-black-main px-6 border border-green-main"
                 >
                   {stack}
                 </div>
