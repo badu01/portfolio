@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Certificates from "./components/Certificates.jsx";
+import Experience from "./Sections/Experience.jsx";
+import Navbar from "./components/Navbar.jsx";
+import About from "./Sections/About.jsx";
+import Hero from "./Sections/Hero.jsx";
+import Projects from "./Sections/Projects.jsx";
+import ConnectMe from "./Sections/ConnectMe.jsx";
+// import ParallaxText from "./components/motion/ParallelScroll.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="snap-y snap-mandatory">
+      <Navbar />
+      <Hero/>
+      <About/>
+      <Experience/>
+      <Certificates/>
+      <Projects/>
+      <ConnectMe/>
     </div>
   );
 }

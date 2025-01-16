@@ -1,0 +1,58 @@
+import React from "react";
+import ConnectButtons from "../components/ConnectButtons";
+import ContactArrow from "../assets/svgs/ContactArrow";
+import ContactMe from "../assets/svgs/ContactMe";
+
+function ConnectMe() {
+  return (
+    <>
+      <section id="connect">
+        <div className="bg-green-main text-black-main divide divide-black-main cursor-round_black">
+          <div className="flex justify-center">
+            <ContactMe />
+          </div>
+          <hr />
+          <div className="my-6">
+            <div className="flex flex-col items-center">
+              <h1 className="text-sm lg:text-xl">
+                now that you are here -{" "}
+                <span className="font-semibold"> let's connect!</span>
+              </h1>
+              <div className="flex justify-center gap-1 mt-3 lg:mt-5 lg:gap-5">
+                <ConnectButtons title="linkedin" />
+                <ConnectButtons title="github" />
+                <ConnectButtons title="gmail" />
+              </div>
+            </div>
+          </div>
+          {
+            // this section is not currently used will be updated soon
+            <div className="hidden">
+              <div className="hidden">content</div>
+              <div className="flex flex-row gap-3 pl-2 items-center">
+                <ContactArrow />
+                <div className="w-full">
+                  <div>
+                    <h1 className="font-bold text-lg">lets have a chat</h1>
+                    <h1>let’s discuss!</h1>
+                  </div>
+                  <hr />
+                  <div>
+                    <h1 className="font-bold text-lg">lets work together</h1>
+                    <h1>got ideas to share?</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+          <hr />
+          <div className="flex justify-center">
+            <p>@badu 2025</p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default ConnectMe;
