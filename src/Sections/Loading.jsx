@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import { PacmanLoader } from "react-spinners";
+import { ReactTyped } from "react-typed";
 
 function Loading() {
-    const [color,setColor] = useState('#1f1f1f')
+    const [color,setColor] = useState('#000000')
     useEffect(()=>{        
         const timer = setTimeout(()=>{
             setColor('#CFEF00')
@@ -20,11 +21,16 @@ function Loading() {
           </div>
           <div className="absolute bottom-10 lg:bottom-36 text-green-main text-xl">
           <CountUp
-            className="text-green-main text-4xl"
+            className="text-green-main font-extrabold text-4xl"
             end={100}
             duration={5}
             />%
           </div>
+          <ReactTyped
+          strings={["HI","HOW ARE YOU"]}
+          typeSpeed={100}
+          cursorChar="."
+          className="hidden lg:flex text-black-main text-center font-extrabold text-4xl fixed bottom-0"/>
         </div>
       </section>
     </>
