@@ -9,9 +9,9 @@ function Certificates() {
     <>
       <section id="certificates">
         <div className="overflow-clip ">
-          <div className="w-screen h-screen bg-cert-pattern bg-cover pt-5 cursor-drag_black">
+          <div className="w-screen h-screen bg-cert-pattern bg-cover cursor-drag_black">
             <motion.div
-              className="absolute w-screen h-[695px]"
+              className="absolute w-screen h-screen"
               ref={constraintRef}
             >
               {CertificateData.map((data, index) => (
