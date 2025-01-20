@@ -1,17 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import { motion } from "framer-motion";
 import DragCard from "./DragCard";
 import { CertificateData } from "../constants/CertificateData";
 
 function Certificates() {
   const constraintRef = useRef(null);
+
+  useEffect(() => {
+    if (!constraintRef.current) {
+      console.warn("Constraint ref is not properly set up");
+    }
+  }, []);
   return (
     <>
       <section id="certificates">
-        <div className="overflow-clip ">
+        <div className="overflow-hidden ">
           <div className="w-screen h-screen bg-cert-pattern bg-cover cursor-drag_black">
             <motion.div
-              className="absolute w-screen h-screen"
+              className="relative w-screen h-screen"
               ref={constraintRef}
             >
               {CertificateData.map((data, index) => (

@@ -4,9 +4,7 @@ import { PacmanLoader } from "react-spinners";
 
 function Loading() {
     const [color,setColor] = useState('#1f1f1f')
-    useEffect(()=>{
-        console.log(color);
-        
+    useEffect(()=>{        
         const timer = setTimeout(()=>{
             setColor('#CFEF00')
         },4400)
