@@ -2,7 +2,7 @@ export const WorkExperience = [
     {
       title: 'Graphic Design Intern',
       period: '2022-Present',
-      desc: 'Currently working as a Graphic Design Intern at PlaySports, where I create visually engaging designs for marketing materials, social media, and branding campaigns.',
+      desc: 'Currently working as a Graphic Design Intern at PlaySpots, where I create visually engaging designs for marketing materials, social media, and branding campaigns.',
     },
     {
       title: 'Poster Designer for College Events',

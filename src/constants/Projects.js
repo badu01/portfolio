@@ -1,6 +1,6 @@
 export const Project = [
   {
-    title: "tinkerhub botcamp app[Movie app]",
+    title: "tinkerhub bootcamp app[Movie app]",
     tools: ["dart", "flutter", "figma"],
     desc: "A Flutter-based movie app developed as part of a TinkerHub bootcamp. This app showcases the fundamentals of Flutter, including API integration, use of modern packages, and efficient data modeling with build_runner. Designed with Figma, the app provides an engaging user experience while demonstrating best practices in Flutter development.",
     year:'2025',
