@@ -1,16 +1,19 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import DragCard from "./DragCard";
 import { CertificateData } from "../constants/CertificateData";
+import Lightbox from "./Lightbox"; // ✅ Import the lightbox
 
 function Certificates() {
   const constraintRef = useRef(null);
+  const [activeImg, setActiveImg] = useState(null); // ✅ Track the active image
 
   useEffect(() => {
     if (!constraintRef.current) {
       console.warn("Constraint ref is not properly set up");
     }
   }, []);
+
   return (
     <>
       <section id="certificates">
@@ -22,16 +25,21 @@ function Certificates() {
             >
               {CertificateData.map((data, index) => (
                 <DragCard
+                  key={index}
                   index={index}
                   title={data.title}
                   imgsrc={data.src}
                   constraintRef={constraintRef}
+                  setActiveImg={setActiveImg} // ✅ Pass this to handle clicks
                 />
               ))}
             </motion.div>
           </div>
         </div>
       </section>
+
+      {/* ✅ Render lightbox if image is selected */}
+      <Lightbox imgsrc={activeImg} onClose={() => setActiveImg(null)} />
     </>
   );
 }
