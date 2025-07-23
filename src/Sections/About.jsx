@@ -55,7 +55,7 @@ function About() {
             </div>
           </div>
           <a href="/Badusha_Pareed_CV.pdf"
-          download='Badusha_Paredd_CV.pdf'
+          download='Badusha_Pareed_CV.pdf'
           target="_blank"
           rel="noopener noreferrer">
             <div className=" w-fit h-fit p-3 bg-green-main rounded-full relative bottom-28 -left-3 hover:cursor-pointer">
