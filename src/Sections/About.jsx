@@ -54,7 +54,7 @@ function About() {
               {<img src={AboutImg} alt="hero-image" className="object-cover" />}
             </div>
           </div>
-          <a href="/Badusha_Pareed_CV.pdf"
+          <a href="/resume.pdf"
           download='Badusha_Pareed_CV.pdf'
           target="_blank"
           rel="noopener noreferrer">
